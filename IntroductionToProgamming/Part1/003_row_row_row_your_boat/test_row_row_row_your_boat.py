@@ -5,7 +5,7 @@ def test_emoticon(capsys):
 
     assert captured.out.strip().splitlines() == [
         "Row, row, row your boat,",
-        "Gently down your stream.",
+        "Gently down the stream.",
         "Merrily, merrily, merrily, merrily,",
         "Life is but a dream.",
     ]

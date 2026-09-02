@@ -3,4 +3,4 @@ def test_minutes_in_a_year(capsys):
 
     captured = capsys.readouterr()
 
-    assert captured.out.strip() == ""
+    assert captured.out.strip() == "525600"

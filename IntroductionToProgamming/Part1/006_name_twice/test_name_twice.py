@@ -9,4 +9,5 @@ def test_name_twice(monkeypatch, capsys):
         "What is your name",
         "Mike O'hearn",
         "Mike O'hearn",
+        "Mike O'hearn",
     ]

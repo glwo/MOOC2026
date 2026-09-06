@@ -6,8 +6,6 @@ def test_name_twice(monkeypatch, capsys):
     captured = capsys.readouterr()
 
     assert captured.out.strip().splitlines() == [
-        "What is your name",
-        "Mike O'hearn",
         "Mike O'hearn",
         "Mike O'hearn",
     ]

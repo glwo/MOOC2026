@@ -5,3 +5,7 @@
 # What is your name? Paul
 # Paul
 # Paul
+
+name = input("What is your name?")
+print(name)
+print(name)

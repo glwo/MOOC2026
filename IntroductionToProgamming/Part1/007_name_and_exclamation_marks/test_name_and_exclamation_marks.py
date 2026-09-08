@@ -1,4 +1,4 @@
-def test_name_twice(monkeypatch, capsys):
+def test_name_and_exclamation_marks(monkeypatch, capsys):
     monkeypatch.setattr("builtins.input", lambda _: "Mike O'hearn")
 
     import name_and_exclamation_marks

@@ -1,6 +1,6 @@
 def test_name_and_address(monkeypatch, capsys):
     inputs = iter(["Rich", "Piana", "91 Weighted Dips Dr", "Gainnesville 32937"])
-    monkeypatch.setattr("builtins.input", lambda _: inputs)
+    monkeypatch.setattr("builtins.input", lambda _: next(inputs))
 
     import name_and_address
 

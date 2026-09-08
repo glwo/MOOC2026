@@ -1,11 +1,13 @@
 def test_name_and_address(monkeypatch, capsys):
-    monkeypatch.setattr("builtins.input", lambda _: "Mike O'hearn")
+    inputs = iter(["Rich", "Piana", "91 Weighted Dips Dr", "Gainnesville 32937"])
+    monkeypatch.setattr("builtins.input", lambda _: inputs)
 
     import name_and_address
 
     captured = capsys.readouterr()
 
     assert captured.out.strip().splitlines() == [
-        "Mike O'hearn",
-        "Mike O'hearn",
+        "Rich Piana",
+        "91 Weighted Dips Dr",
+        "Gainnesville 32937",
     ]
